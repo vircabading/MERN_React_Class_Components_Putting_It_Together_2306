@@ -15,6 +15,11 @@ class PersonCardComp extends Component {
         }
     }
 
+    haveBirthday = (e) => {
+        const newAge = this.state.age + 1;
+        this.setState({age: newAge});
+    }
+
     render() {
         // Props passed from parent component
         //const {firstName, lastName, age, hairColor} = this.props;
@@ -24,7 +29,7 @@ class PersonCardComp extends Component {
             <p>Age: { this.state.age }</p>
             <p>Hair Color: { this.state.hairColor }</p>
             <br />
-            <button>Birthday Button for { this.state.firstName } { this.state.lastName }</button>
+            <button onClick={ this.haveBirthday }>Birthday Button for { this.state.firstName } { this.state.lastName }</button>
             <br></br>
         </div>;
     }
