@@ -9,11 +9,15 @@ class Message extends Component {
         }
     }
 
+    logout = (e) => {
+        this.setState({message: "Goodbye Boss"});
+    }
+
     render() {
         return (
             <div>
                 <h1>{ this.state.message }</h1>
-                <button>Leave</button>
+                <button onClick={ this.logout } >Leave</button>
             </div>
         );
 
