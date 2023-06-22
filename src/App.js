@@ -1,5 +1,6 @@
 import './App.css';
 import PersonCardComp from './components/PersonCardComp';
+import Message from './components/Message';
 
 //////////////////////////////////////////////
 // App.js
@@ -7,6 +8,7 @@ import PersonCardComp from './components/PersonCardComp';
 function App() {
   return (
     <div className="App">
+      <Message />
       <PersonCardComp firstName={"Jane"} lastName={"Doe"} age={45} hairColor={"Black"} />
       <PersonCardComp firstName={"John"} lastName={"Smith"} age={88} hairColor={"Brown"} />
       <PersonCardComp firstName={"Millard"} lastName={"Filmore"} age={50} hairColor={"Brown"} />
